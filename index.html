@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.5.1/css/all.css">
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Adebayo</span><!--<br>From Nigeria</h1>-->
+            </div>
+        </div>
+     </div>
+       <!--About-->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod incidunt, praesentium nisi neque quia eligendi doloremque libero modi voluptatibus minus fugit pariatur adipisci earum quidem tempora! Debitis sapiente doloribus qui?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML<br>CSS<br>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Web Development Training at Metro Hub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Name of School</span><br>Bolade Model College</li>
+                            <li><span>Graduation Year</span><br>2023</li>
+                            <!--<li><span>Course</span><br>Commercial</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!--Services-->
+     <div id="services">
+        <div class="container">
+           <h1 class="sub-title">My Services</h1>
+           <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Sed nulla nibh, 
+                tincidunt sit<br> amet sapien quis</p>
+                <a href="#">Learn More</a>
+           </div>
+           <div>
+            <i class="fa-brands fa-sketch"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Sed nulla nibh, 
+            tincidunt sit<br> amet sapien quis</p>
+            <a href="#">Learn More</a>
+       </div>
+        </div>
+     </div>
+     <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Next.PNG" width="700px" height="550px">
+                    <div class="layer">
+                        <h3>Next Technology</h3>
+                        <p>This A Technology Webpage</p>
+                        <a href="https://nextfy.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="magazine.png" width="700px" height="550px">
+                    <div class="layer">
+                        <h3>Magazine Page</h3>
+                        <p>This a Magazine Webpage</p>
+                        <a href="https://campmagazine.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--<div class="work">
+                    <img src="dark.jpg" width="700px" height="550px">
+                    <div class="layer">
+                        <h3>Website Extention</h3>
+                        <p>This a site extention that help you screenshot <br>and screen record on your pc web browser</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>-->
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09054932957</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.whatsapp.com/send?l=en&phone=+234 9054932957&text=I want to 
+                   order a website" class="social__icon--link" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="My CV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Adebayo.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+sidemeu.style.right = "0";
+}
+function closemenu(){
+sidemeu.style.right = "-200px";
+}
+</script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFevdKqpTlIauoOmVnfhCJ73vy5vhcYNk38tO7DHZzPpCc0Vc-BBoSHSnh44eF3kawvA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+             msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    }) 
+  </script>
+</body>
+</html>
+    
+    
